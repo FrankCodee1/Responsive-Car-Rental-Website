@@ -107,7 +107,7 @@ header{
    letter-spacing: 2px;
 }
 .text span {
-   color: var(--gradient);
+   color: #fff;
 }
 .text p {
    margin: 00.5rem 0 1rem;
