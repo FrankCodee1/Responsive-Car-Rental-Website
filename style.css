@@ -41,6 +41,7 @@ header{
    justify-content: space-between;
    background: #eeeff1;
    padding: 15px 100px;
+  cursor: pointer;
 }
 .logo img {
    width: 40px;
@@ -103,7 +104,7 @@ header{
    grid-template-columns: repeat(2, 1fr);
 }
 .text h1 {
-   font-size: 3.5rem;
+   font-size: 5rem;
    letter-spacing: 2px;
 }
 .text span {
