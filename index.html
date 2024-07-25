@@ -5,23 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Rental Website</title>
-    <link rel="stylesheet" href="style.css">  
+    
+    <link rel="stylesheet" href="style.css">
+     
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
- https://unpkg.com/aos@next/dist/aos.css
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+      <link rel="icon" href="images/fav1.png">
 </head>
 <body>
-      
+      <div>
+         <header class="services-container">
+            <h1 class="animated"></h1>
+         </header>
+      </div>
        <header>
             <a href="#" class="logo"><img src="images/Vector.jpeg" alt="vector.jpeg"></a>
        
              <div class="bx bx-menu" id="menu-icon"></div>
 
              <ul class="navbar">
-                 <li><a href="#home"></a>Home</li>
-                 <li><a href="#ride"></a>Ride</li>
-                 <li><a href="#services"></a>Services</li>
-                 <li><a href="#about"></a>About</li>
+                 <li><a href="#home">Home</a></li>
+                 <li><a href="#ride">Ride</a></li>
+                 <li><a href="#services">Services</a></li>
                  <li><a href="#reviews">Reviews</a></li>
+                 
             </ul>
              <div class="header-btn">
                 <a href="#" class="sign-up">Sign Up</a>
@@ -58,7 +65,7 @@
      </div>
 </section>
 <section class="ride" id="ride">
-     <div class="heading">
+     <div data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="linear" class="heading">
          <span>How It Works</span>
          <h1>Rent A Car With 3 Easy Steps</h1>
      </div>
@@ -214,6 +221,22 @@
                </div>
                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat vel assumenda a quod consequatur! Necessitatibus alias illo officia quibusdam, aliquam sint sunt vitae, numquam repudiandae vero excepturi repellendus eius quidem!</p>
           </div>
+          
+               <h1>Contact Us</h1>
+          
+          <main>
+               <form id="contact-form">
+                   <label for="name">Name:</label>
+                   <input type="text" id="name" name="name"><br><br>
+                   <label for="email">Email:</label>
+                   <input type="email" id="email" name="email"><br><br>
+                   <label for="phone">Phone:</label>
+                   <input type="tel" id="Phone" name="phone"><br><br>
+                   <label for="message">Message</label>
+                   <textarea id="message" name="message"></textarea><br><br>
+                   <input type="submit" value="Send Message">
+               </form>
+          </main>
       <div>
 </section>
 <section class="newsletter">
@@ -224,15 +247,16 @@
      </div>
 </section>
 <div class="copyright">
-     <p>&#169; FrankLord All Rights Reserved</p>
+     <p>&#169; FrankLord All Rights Reserved 2024</p>
      <div class="social">
           <a href="#"><i class='bx bxl-twitter'></i></a>
           <a href="#"><i class='bx bxl-facebook'></i></a>
           <a href="#"><i class='bx bxl-instagram'></i></a>
      </div>
 </div>
+
+
         <script src="main.js"></script>
-          <!-- animateonscroll -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>AOS.init();</script>
 </body>
