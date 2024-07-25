@@ -8,7 +8,7 @@
   scroll-behavior: smooth;
   list-style: none;
   text-decoration: none;
- font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 :root{
    --main-color: #fe5b3d;
@@ -16,7 +16,6 @@
    --text-color: #444;
    --gradient: linear-gradient:(#fe5b3d, #ffac38);
 }
-/* Customer Scroll Bar */
 html::-webkit-scrollbar {
    width: 0.5rem;
 }
@@ -41,7 +40,7 @@ header{
    justify-content: space-between;
    background: #eeeff1;
    padding: 15px 100px;
-  cursor: pointer;
+   cursor: pointer;
 }
 .logo img {
    width: 40px;
@@ -70,7 +69,6 @@ header{
 }
 .navbar a:hover::after{
     width: 100%;
-    cursor: pointer;
 }
 #menu-icon {
     font-size: 24px;
@@ -108,7 +106,7 @@ header{
    letter-spacing: 2px;
 }
 .text span {
-   color: var(--gradient);
+   color: var(--gradient)
 }
 .text p {
    margin: 00.5rem 0 1rem;
@@ -184,7 +182,7 @@ header{
    padding: 2opx;
 }
 .ride-container .box .bx {
-   font-size: 34px;
+   font-size: 3.0rem;
    padding: 10px;
    background: #eeeff1;
    border-radius: 0.5rem;
@@ -297,7 +295,6 @@ header{
    object-fit: cover;
    object-position: center;
    border: 2px solid var(--second-color);
-   text-align: center;
 }
 .reviews-container .box {
    display: flex;
@@ -319,6 +316,56 @@ header{
 .reviews-container .box .stars .bx {
 color: var(--main-color);
 }
+body {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+
+main {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 80vh;
+}
+#contact-form {
+   width: 50px;
+   background-color: #f7f7f7;
+   padding: 20px;
+   border: 1px solid #ddd;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label {
+   display: inline-block  
+   margin-bottom: 10px;
+}
+input[type="text"], input[type="email"], input[type="tel"] {
+   width: 100%;
+   height: 40px;
+   margin-bottom: 20px;
+   padding: 10px;
+   border: 1px solid #ccc;
+}
+textarea {
+   width: 100%;
+   height: 100px;
+   margin-bottom: 20px;
+   padding: 10px;
+   border: 1px solid #ccc;
+}
+input[type="submit"] {
+   background-color: #333;
+   color: #fff;
+   padding: 10px 20px;
+   border: 0;
+   border-radius: 5px;
+   cursor: pointer;
+}
+input[type="submit"]:hover {
+   background-color: #555;
+}
+
 .newsletter{
    background: linear-gradient(to top right, #fe5b3d, #ffac38);
    display: flex;
@@ -466,6 +513,12 @@ color: var(--main-color);
    .text h1{
       font-size: 2rem;
    }
+   .form-container {
+      padding-top: 2rem;
+   }
+   .services-container {
+      grid-template-columns: repeat(auto-fit, minmax(254px, auto));
+   }
 }
 
 
@@ -488,22 +541,66 @@ color: var(--main-color);
    height: 4rem;
    border-radius: 360px;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  line-height: 1.4;
-
-  color-scheme: light dark;
-  color: #33333380;
-  background-color: #FFF;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.animated {
+   animation: animation 3s;
 }
+@keyframes animation{
+   0%{
+      transform: translateX(0px);
+   }
+   100% {
+      transform: translateX(100px);
+   }
+}
+
+@media (max-width: 600px) {
+   body{
+   font-size: 14px;
+   }
+.header { 
+   text-align: center;
+}
+.car-list {
+   display: block;
+   margin: 0;
+   padding: 10px;
+}
+.car-item {
+   margin-bottom: 20px;
+}
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+   body {
+      font-size: 16px;
+   }
+   .header {
+       text-align: left;
+   }
+   .car-list {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .car-item {
+      width: 48%;
+      margin: 1%;
+   }
+  }
+
+   @media (min-width: 901px) {
+      body {
+         font-size: 18px;
+      }
+      .header {
+         text-align: left;
+      }
+      .car-list {
+         display: flex;
+         justify-content: space-between;
+      }
+      .car-item {
+         width: 30%
+         margin-bottom: 20px;
+      }
+   }
